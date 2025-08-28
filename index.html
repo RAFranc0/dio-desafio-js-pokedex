@@ -25,6 +25,7 @@
 <body>
     <section class="content">
         <h1>Pokedex</h1>
+        <h5 id="subtitulo-legenda">clique em um pokemon para ver mais detalhes!</h5>
 
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
@@ -36,6 +37,27 @@
             </button>
         </div>
     </section>
+
+    <!-- Modal Pokémon -->
+    <div id="pokemonModal" class="modal">
+        <div class="modal-content">
+            <div id="left-modal-content">
+                <h2 id="modalName"></h2>
+                <ul id="modalTypes"></ul>
+                <img id="modalImage" src="" alt="">
+            </div>
+
+            <div id="right-modal-content">
+                <ul id="modalAbilities"></ul>
+                <ul id="modalBaseStatus"></ul>
+            </div>
+
+            <span class="close">&times;</span>
+
+        </div>
+    </div>
+
+
 
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
